@@ -16,7 +16,7 @@ Idea to create a fully functional chrome extension that helps to download the yo
 4. after that you need to add some extra npm modules for downloading youtube videos.
 - **npm i ytdl-core ffmpeg-static**
 5. Server part is completed now run the server using 
-- node .
+- **node .**
 6. Open chrome goto **chrome://extensions/** and on the developer mode
 7. click on **load unpacked** and select the plugin folder
 8. pin the extension present in the chrome header
