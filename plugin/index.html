@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Video Downloder</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        html body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            height: 200px;
+            width: 300px;
+            font-family: 'Teko', sans-serif;
+        }
+        .header {
+            height: 50px;
+            font-size: 30px;
+            width: inherit;
+            text-align: center;
+        }
+        .header span {
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .input {
+            font-size: 17px;
+            background-color: lightgrey;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-left: 4px solid mediumpurple;
+            width: 80%;
+            margin: 10px;
+            margin-left: 15px;
+        }
+        .select {
+            width: 88%;
+            margin-left: 15px;
+        }
+        .download {
+            margin: 20px 40px 40px 70px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: mediumpurple;
+            border-style: none;
+            font-size: 30px;
+            border-radius: 30px 40px 40px 0px;
+            font-family: 'Teko', sans-serif;
+        }
+        .download:active{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p>Youtube Downloder <span>ULTRA PRO MAX</span></p>
+    </div>
+    <hr >
+    <form action="http://localhost:4000/download" method="GET">
+        <div class="container">
+            <input name="path" class="input" value="F:/song/YTPlugin">
+            <input type="text" name="URL" class="input" placeholder="Enter URL">
+            <select name="quality" class="input select">
+                <option value="audio_only">Audio Only</option>
+                <option value="full_hd_video">Full HD Video 1080p</option>
+                <option value="360_video">Basic Video 360p</option>
+            </select>
+        </div>
+        <button class="download" id="download" type="submit">Download Now</button>
+    </form>
+
+</body>
+</html>
